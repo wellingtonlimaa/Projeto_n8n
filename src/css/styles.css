@@ -1,0 +1,23 @@
+.navbar {
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 18rem;
+}
+
+.carousel-item img {
+    height: 1000px;
+    /* altura fixa (ajuste conforme quiser) */
+    object-fit: cover;
+    /* preenche sem distorcer */
+    width: 100%;
+    /* ocupa toda a largura */
+}
+
