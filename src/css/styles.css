@@ -6,12 +6,30 @@ body {
   margin: 0;
 }
 
-
-
 .navbar {
   padding: 30px;
 }
 
+/* === Barra de pesquisa === */
+input[type="search"] {
+  background-color: #ffffff !important;
+  /* fundo branco */
+  color: #555555 !important;
+  /* texto cinza */
+  border: 1px solid #ccc;
+  /* borda leve */
+  border-radius: 20px;
+  /* cantos arredondados */
+  padding: 5px 15px;
+  /* espaçamento interno */
+  outline: none;
+  /* remove o contorno padrão */
+}
+
+input[type="search"]::placeholder {
+  color: #999999;
+  /* cor do texto placeholder */
+}
 
 .img_nav {
   width: 100px;
@@ -196,26 +214,7 @@ body {
 }
 
 
-/* === Barra de pesquisa === */
-input[type="search"] {
-  background-color: #ffffff !important;
-  /* fundo branco */
-  color: #555555 !important;
-  /* texto cinza */
-  border: 1px solid #ccc;
-  /* borda leve */
-  border-radius: 20px;
-  /* cantos arredondados */
-  padding: 5px 15px;
-  /* espaçamento interno */
-  outline: none;
-  /* remove o contorno padrão */
-}
 
-input[type="search"]::placeholder {
-  color: #999999;
-  /* cor do texto placeholder */
-}
 
 /* ===== SEÇÃO CONFIRMAÇÃO ===== */
 .rsvp-section {
@@ -280,7 +279,71 @@ input[type="search"]::placeholder {
   box-shadow: 0 5px 15px rgba(192, 78, 116, 0.3);
 }
 
-/* ===== POPUP ===== */
+
+/* ===== Carta ===== */
+.carta {
+  background: #fffaf5;
+  border: 2px solid #e6d6c8;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  padding: 40px;
+  border-radius: 12px;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.carta::before,
+.carta::after {
+  content: "💌";
+  position: absolute;
+  font-size: 1.8rem;
+  opacity: 0.3;
+}
+
+.carta::before {
+  top: 10px;
+  left: 15px;
+}
+
+.carta::after {
+  bottom: 10px;
+  right: 15px;
+}
+
+.titulo {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.2rem;
+  color: #b57b5c;
+  margin-bottom: 20px;
+}
+
+.assinatura {
+  text-align: right;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  margin-top: 30px;
+  color: #a4674e;
+}
+
+.detalhes {
+  margin-top: 15px;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.linha {
+  border: none;
+  height: 1px;
+  background: #e6d6c8;
+  margin: 15px 0;
+}
+
+/* ===== Fim carta ===== */
+
+
+/* ===== Formulario Presença ===== */
 .popup {
   display: none;
   position: fixed;
@@ -356,10 +419,9 @@ input[type="search"]::placeholder {
   }
 }
 
-
+/* ===== Fim Formulario Presença ===== */
 
 /* === Cards === */
-
 h2 {
   text-align: center;
   margin: 60px 0;
@@ -565,10 +627,17 @@ h2 {
 
 /* === Footer === */
 .footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  margin-top: 20px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fffaf5;
+  border-top: 2px solid #f0e2d1;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #9c8c83;
+  padding: 10px 0;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .footer p {
