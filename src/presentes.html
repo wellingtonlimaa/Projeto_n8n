@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/presentes.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Presentes</title>
 </head>
@@ -30,20 +30,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./contato.html">Contato</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Mais
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Eletrodomésticos</a></li>
-                            <li><a class="dropdown-item" href="#">Utensílios de cozinha</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Outros</a></li>
-                        </ul>
-                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control pesquisa me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -58,10 +44,44 @@
         </div>
     </nav>
 
+    <div>
+        <h1 class="title">Fotos do casal💖</h1>
+    </div>
+
+    <!-- Main Content 1-->
+    <div class="contentcopy">
+        <img src="https://picsum.photos/800/400?random=1" alt="...">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore libero assumenda obcaecati error nihil
+            deleniti, quasi non, accusantium voluptas ratione voluptate, quia dolor. Sint illo non fugiat totam eum?
+        </h3>
+    </div>
+
+    <!-- Main Content  2 -->
+    <div class="contentcopy">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus labore libero assumenda obcaecati error nihil
+            deleniti, quasi non, accusantium voluptas ratione voluptate, quia dolor. Sint illo non fugiat totam eum?
+        </h3>
+        <img src="https://picsum.photos/800/400?random=1" alt="...">
+    </div>
+
+    <div class="formulario">
+        <h3>💖 Deixe um recadinho para os noivos</h3>
+        <input type="text" id="nome" placeholder="Seu nome" />
+        <textarea id="comentario" rows="3" placeholder="Escreva algo carinhoso..."></textarea>
+        <button onclick="adicionarComentario()">Adicionar 💌</button>
+    </div>
+
+    <div class="campo-nuvem" id="campoNuvem">
+        <!-- Os ícones flutuantes aparecerão aqui -->
+        <div class="floating-icons"></div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer ">
         <p>&copy; 2024 Chá de Cozinha. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="./presentes.js"></script>
 </body>
 
 </html>
